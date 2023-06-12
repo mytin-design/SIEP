@@ -1,0 +1,936 @@
+/* remember identifying conflicts with bootstrap */
+
+*, ::before, ::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    background: rgb(255, 255, 255) ;
+}
+
+a {
+    text-decoration: none;
+}
+
+#hd {
+    height: fit-content;
+    background-color: rgb(0, 102, 255);
+}
+
+.x-logo {
+    display: flex;
+    align-items: center;
+    gap: 1pc;
+}
+
+#x-text {
+    color: #fff;
+}
+
+.x-img {
+    border-radius: 100%;
+}
+
+#nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5pc 1pc;
+    width: 100%;
+}
+
+.nv-xd {
+    width: 60%;
+    display: flex;
+    align-self: center;
+    justify-content: space-around;
+}
+
+
+
+.op-ln, .dropdown-toggle {
+    color: #fff;
+}
+
+.op-ln:hover, .op-ln:visited,  .dropdown-toggle:hover, .dropdown-toggle:visited {
+    color: white;
+}
+
+#sideNavigation {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 0; 
+    background-color: rgba(17, 17, 17, 0.945);
+    height: 100vh;
+    overflow: hidden;
+    display: block;
+    padding-top: 3pc;
+    z-index: 3;
+    transition: .5s ease;
+    display: none;
+}
+
+.sideNavigation a {
+    text-decoration: none;
+
+}
+.sideNavigation .gate-link {
+    display: block;
+    color: #555;
+    padding: .8pc .8pc .8pc 3.2pc;
+    text-decoration: none;
+}
+
+.sideNavigation .gate-link:hover {
+    color: #fff;
+}
+.sideNavigation .closegate {
+    padding: .8pc .8pc;
+    color: #888;
+    font-size: 4rem;
+    margin-left: 75%;
+    text-decoration: none;
+}
+
+.sideNavigation .closegate:hover {
+    color: #fff;
+}
+
+.opengate {
+    height: 3pc;
+    padding:.5pc .8pc;
+    color: #888;
+    font-size: 2.5rem;
+    display: none;
+    background-color: #111;
+    border: none;
+}
+
+.opengate:hover {
+    color: #fff;
+}
+.op-hd {
+    padding: 1pc;
+    height: fit-content;
+background: linear-gradient( rgba(13, 88, 228, 0.897), rgba(255, 255, 255));
+
+}
+
+
+/* carousel container */
+
+.op-hd-in {
+    position: relative;
+    margin: 0 auto;
+    max-width: 100pc;
+}
+
+.crl-bx {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1pc;
+}
+
+.crl-bx-in {
+    display: flex;
+    align-items: flex-start;
+    flex-flow: column;
+    width: 30%;
+}
+
+.op-hd-img {
+    height: 25pc;
+    width: 30pc;
+    border-radius: .4pc;
+}
+
+.op-mn-title {
+    font-size: 3.5rem;
+}
+
+.op-hd-text {
+    color: #fff;
+}
+
+
+#opMore {
+    padding: .5pc;
+    height: 2.5pc;
+    width: 8pc;
+    border-radius: 5pc;
+    background-color: transparent;
+    color: #fff;
+    font-weight: 800;
+    border: .1pc solid #fff;
+}
+
+#opMore:hover {
+    border-color: #555;
+}
+
+
+/* call back form */
+
+/* the call-bx-main container just creates extra space forthe call-bx
+
+since it has been removed from normal flow - this is not the most suitable
+solution, but it will assist in design for the time being */
+
+.call-bx-main {
+    height: 0;
+}
+.call-bx {
+    position: absolute;
+    top: 65%;
+    left: 20%;
+    margin: 5pc auto;
+    width: 65%;
+    border-radius: 5pc;
+    box-shadow: 0pc 1pc 1pc 0.66pc #eee;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1pc;
+    padding: 1pc;
+background-color: #fff;
+z-index: 2;
+}
+
+.doc-find > * {
+    font-size: 1.2rem;
+}
+.strong {
+    font-weight: bolder;
+}
+
+#formId, input {
+    border: none;
+    outline: none;
+}
+
+
+#formId {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1pc;
+    color: black
+}
+
+.fld {
+    display: flex;
+    flex-flow: column;
+    border-radius: 5pc;
+    padding: .8pc;
+    border: .1pc solid rgb(0, 140, 255);
+    width: 12pc;
+}
+
+
+#submitbtn {
+    padding: .6pc 1pc .6pc 1pc;
+    border-radius: 1pc;
+    background: linear-gradient(90deg,  rgba(13, 13, 228, 0.897), rgba(82, 169, 241, 0.945));
+    box-shadow: 0pc .1pc .5pc 0.1pc rgba(47, 47, 94, 0.178);
+    color: white;
+    width: 7pc;
+}
+
+::placeholder {
+    font-weight: bold;
+}
+
+
+/*
+input[placeholder="8273819"]:focus, input[placeholder="10 Miles"]:focus {
+    color: white;
+}
+*/
+
+
+.ad-src {
+    color: #000;
+}
+
+/* ops styles */
+
+
+.op-ab {
+    margin-top: 3pc;
+    background-color: #fff;
+}
+.upper {
+    text-transform: uppercase;
+}
+.op-ab-in {
+margin: 0 auto;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.op-ab-img {
+padding: 1pc;
+display: flex;
+flex-flow: column;
+}
+
+.op-ab-bx-ds {
+position: relative;
+top: 9pc;
+color: white;
+background: linear-gradient(rgba(13, 13, 228, 0.897), rgba(82, 169, 241, 0.945));
+height: 20pc;
+width: 15pc;
+padding: 2pc;
+border-radius: .4pc;
+z-index: 3;
+font-size: 3rem;
+}
+.ab_ds_title {
+font-weight: bold;
+font-size: .95rem;
+}
+
+.ab-img-one {
+position: relative;
+top: -155px;
+left: 75px;
+height: 15pc;
+width: 20pc;
+border-radius: .4pc;
+z-index: 1;
+}
+
+.ab-img-two {
+position: relative;
+top: -175px;
+left: 7.5%;    
+height: 10pc;
+width: 20pc;
+border-radius: .4pc;
+z-index: 2;
+
+}
+
+.op-ab-ds {
+margin-left: 5pc;
+padding: 2pc;
+height: 50vh;
+width: 30%;
+}
+
+
+#opBtn {
+padding: .6pc 1pc .6pc 1pc;
+border-radius: 5pc;
+background: linear-gradient(90deg,  rgba(13, 13, 228, 0.897), rgba(82, 169, 241, 0.945));
+box-shadow: 0pc .1pc .5pc 0.1pc rgba(0, 0, 255, 0.178);
+color: white;
+border: none;
+width: 8pc;
+}
+
+
+/* find state -- styles */
+
+.af-bx {
+    display: flex;
+    flex-flow: column;
+    gap: 1pc;
+    background: linear-gradient(rgb(62, 82, 172), rgb(41, 131, 248));
+    color: white;
+    text-align: center;
+    padding: 1pc;
+    font-size: 1.5rem;
+}
+
+.af-title {
+    font-size: 2.5rem;
+}
+
+.af-txt {
+    margin: 0 auto;
+    width: 70%;
+}
+
+.af-form {
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1pc;
+    width: 50%;
+}
+.sel {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .5pc;
+    padding: .3pc .8pc .3pc 1.5pc;
+    border: .1pc solid;
+    border-radius: 5pc;
+    width: 100%;
+}
+
+div.sel label {
+    font-size: 1.3rem;
+}
+
+#stateSelect {
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 1.3rem;
+    width: 90%;
+
+}
+
+#stateSelect option {
+    color: black;
+    background-color: lightblue;
+}
+
+#subbtn {
+    height: 2.5pc;
+    width: 8pc;
+    border-radius: 5pc;
+    background-color: white;
+    color: black;
+    border: none;
+}
+
+
+/* article box */
+
+.bold {
+    font-weight: bold;
+}
+.art-bx {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap: 1pc;
+    padding: 1pc;
+}
+
+.art-bx-bx {
+    display: flex;
+    flex-flow: column;
+    gap: 1pc;
+    background-color: #fff;
+    cursor: default;
+    border: .1pc solid #eee;
+}
+
+.art-bx-by {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.art-bx-bx:hover {
+    box-shadow: 0pc 0pc .666pc .666pc #eee;
+}
+
+.art-bx-title, .art-bx-ds {
+
+    margin-left: 10pc;
+    font-size: 1.5rem;
+    width: 6pc;
+    
+}
+
+.art-bx-title {
+    margin-top: 3pc;
+    color: rgb(0, 38, 255);
+    width: 10pc;
+}
+
+.art-bx-img {
+    width: 100%;
+    height: 12pc;
+}
+
+.art-ps-ab {
+    
+    display: flex;
+    flex-flow: column;
+    gap: .5pc;
+    align-items: start;
+    font-size: 1.2rem;
+    color: white;
+    display: none;
+}
+
+
+.art-bx-one {
+    position: absolute;
+    top: 110.5pc;
+    left: 28%;
+}
+
+.art-bx-two {
+    position: absolute;
+    top: 110.5pc;
+    left: 53%;
+}
+
+.art-bx-three {
+    position: absolute;
+    top: 110.5pc;
+    left: 78%;
+}
+.ps-ab-title {
+    margin-left: 1pc;
+}
+
+.ps-ab-dat {
+    padding: .5pc 1pc .5pc 1pc;
+    border-radius: 1pc;
+    background-color: rgb(0, 89, 255);
+    color: white;
+}
+
+.art-bx-in-ds {
+    margin: 0 auto;
+    width: 80%;
+    padding: 1pc;
+}
+
+.art-bx-acts {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: .8pc 3pc .8pc 3pc;
+    font-size: 1rem;
+}
+
+
+/* feed styles */
+
+.feed-bx {
+    margin: 5pc auto;
+    background: linear-gradient(90deg, rgb(187, 105, 253), rgb(80, 149, 252));
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1pc 2pc 1pc 2pc;
+    width: 65%;
+    border-radius: 5pc;
+    font-size: 1.5rem;
+}
+
+.feed-title {
+    font-size: 2.5rem;
+}
+
+#findbtn {
+    background-color: white;
+    color: black;
+    text-transform: capitalize;
+    border: none;
+    padding: 1pc;
+    border-radius: 2pc;
+}
+
+/* footer */
+
+.f-lnk {
+    text-decoration: none;
+    color: black;
+}
+
+.f-lnk:hover {
+    color: rgb(0, 132, 255);
+}
+
+.logo-img {
+    border-radius: 100%;
+}
+
+.foo-lns, .foo-cp {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5pc 3pc;
+}
+
+.foo-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+}
+
+
+
+
+@media only screen and (max-width: 1300px) {
+    .call-bx-main {
+        height: fit-content;
+    } 
+    .call-bx {
+        position: unset;
+    width: 85%;
+} 
+}
+
+@media only screen and (max-width:996px) {
+ .call-bx {
+    position: unset;
+    margin: 0 auto;
+    width: 85%;
+}  
+
+.op-ab-ds {
+margin-left: 5pc;
+padding: 2pc;
+
+}
+
+.art-bx-title, .art-bx-ds {
+
+    margin-left: 5pc;
+    width: 8pc;
+    
+}
+
+.art-ps-ab {
+    position: unset;
+}
+
+
+.feed-bx {
+    width: 80%;
+    
+}
+
+.foo-nav {
+    width: 60%;
+}
+
+
+}
+
+@media only screen and (max-width: 870px) {
+    
+.art-ds-title, .art-ds-txt {
+    font-size: small;
+}
+}
+
+
+@media only screen and (max-width:850px) {
+
+    .op-hd-img {
+        width: 15pc;
+    }
+
+    
+    .call-bx {
+    position: unset;
+            margin: 0 auto;
+        width: 95%;    
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1pc;
+        background-color: transparent;
+        box-shadow: unset;
+
+    }  
+
+    .doc-find {
+        background-color: transparent;
+    }
+
+    .d-c, .d-f {
+        font-size: 1.5rem;
+    }
+
+    #formId {
+        border-radius: 5pc;
+        box-shadow: 0pc 1pc 1pc 0.66pc #eee;
+        padding: .5pc;
+    }
+    
+    .art-bx {
+        display: flex;
+        flex-flow: column;
+        gap: 1pc;
+    }
+
+    .art-bx-by {
+        margin: 0 auto;
+        width: 70%;
+    }
+
+    
+    .art-bx-img {
+
+        height: 20pc;
+    }
+
+    .feed-bx {
+        font-size: small;
+    }
+
+    .foo-nav {
+        width: 70%;
+    }
+}
+
+
+
+@media only screen and (max-width: 800px) {
+    .call-bx {
+    position: unset;
+        width: 95%;    
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1pc;
+        background-color: transparent;
+        box-shadow: unset;
+
+    }  
+
+    .doc-find {
+        background-color: transparent;
+    }
+
+    .d-c, .d-f {
+        font-size: 1.5rem;
+    }
+
+    #formId {
+        border-radius: 5pc;
+        box-shadow: 0pc 1pc 1pc 0.66pc #eee;
+        padding: .5pc;
+    }
+    
+    .art-bx {
+        display: flex;
+        flex-flow: column;
+        gap: 1pc;
+    }
+
+    .art-bx-by {
+        margin: 0 auto;
+        width: 70%;
+    }
+
+    .art-bx-img {
+
+        height: 20pc;
+    }
+
+    .feed-bx {
+        width: 95%;
+        font-size: small;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    
+
+.art-bx-title, .art-bx-ds {
+    margin-left: 1pc;
+    width: 8pc;
+}
+
+
+.art-bx-acts {
+    padding: .5pc;
+}
+
+.feed-bx {
+    width: 95%;
+    font-size: small;
+}
+
+.foo-nav {
+    width: 80%;
+}
+
+}
+
+@media only screen and (max-width: 730px) {
+
+    .nv-xd {
+        display: none;
+    }
+    #sideNavigation {
+        display: block;
+    }
+
+    .opengate {
+        display: inline-block;
+    }
+
+    .feed-bx {
+        font-size: small;
+    }
+}
+
+@media only screen and (max-width:700px) {
+    .crl-bx-in, .op-hd-im-bx {
+        width: 50%;
+    }
+    .feed-bx {
+        font-size: smaller;
+    }
+}
+/* medias from 600 and below - consider using a humbuger menu */
+
+@media only screen and (max-width: 650px) {
+
+    .crl-bx-in, .op-hd-im-bx {
+        width: 50%;
+    }
+
+    .call-bx-main {
+        height: 30vh;
+    }
+    #formId {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .op-ab-in {
+        display: flex;
+        flex-flow: column;
+    }
+
+    .op-ab-img, .op-ab-ds {
+        width: 70%;
+    }
+
+    .op-ab-ds {
+        height: fit-content;
+        margin: 0;
+        padding: 1pc;
+        width: 70%;
+    }
+    .op-ab-bx-ds {
+        height: 15pc;
+        width: 15pc;
+    }
+
+    .ab-img-one {
+        top: -65px;
+        height: 10pc;
+        width: 15pc;
+    }
+
+    .ab-img-two {
+        left: 20%;
+        top: -120px;
+        height: 10pc;
+        width: 15pc;
+    }
+
+    .foo-nav {
+        flex-wrap: wrap;
+    }
+
+} 
+
+
+
+@media only screen and (max-width: 550px) {
+    .crl-bx {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: .5rem;
+    }
+
+    .crl-bx {
+        font-size: x-small;
+    }
+
+    .op-mn-title {
+        font-size: large;
+    }
+    
+    .crl-bx-in, .op-hd-im-bx {
+        width: 50%;
+    }
+    .op-hd-img {
+        height: 15pc;
+        width: 10pc;
+    }
+
+    .af-txt {
+        width: 100%;
+    }
+
+    .af-form {
+        width: 80%;
+    }
+
+    .art-bx-img {
+        height: 10pc;
+    }
+
+    .feed-bx {
+        display: flex;
+        flex-flow: column;
+        font-size: x-small;
+    }
+
+    .foo-nav {
+        font-size: xx-small;
+    }
+
+
+}
+
+
+@media only screen and (max-width: 375px) {
+    .crl-bx {
+        font-size: x-small;
+    }
+
+    .op-mn-title {
+        font-size: small;
+    }
+
+    #formId {
+        box-shadow: unset;
+    }
+
+    .op-ab-bx-ds {
+        left: -15px;
+    }
+
+    .ab-img-one {
+        left: 2.5pc;
+    }
+
+    .ab-img-two {
+        left: 1.5pc;
+    }
+
+    .feed-bx {
+        border-radius: unset;
+    }
+
+    .foo-nav {
+        flex-wrap: wrap;
+        font-size: xx-small;
+    }
+}
