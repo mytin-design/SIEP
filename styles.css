@@ -25,7 +25,7 @@ a {
     gap: 1pc;
 }
 
-#x-text {
+.x-text {
     color: #fff;
 }
 
@@ -850,6 +850,10 @@ padding: 2pc;
 
 
 @media only screen and (max-width: 550px) {
+
+    .x-texthide {
+        display: none;
+    }
     .crl-bx {
         display: flex;
         flex-direction: column;
